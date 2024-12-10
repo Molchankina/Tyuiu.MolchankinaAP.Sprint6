@@ -48,11 +48,12 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // 
             // textBoxTask_KES
             // 
-            textBoxTask_KES.Location = new Point(25, 22);
+            textBoxTask_KES.Location = new Point(29, 29);
+            textBoxTask_KES.Margin = new Padding(3, 4, 3, 4);
             textBoxTask_KES.Multiline = true;
             textBoxTask_KES.Name = "textBoxTask_KES";
             textBoxTask_KES.ReadOnly = true;
-            textBoxTask_KES.Size = new Size(232, 167);
+            textBoxTask_KES.Size = new Size(265, 221);
             textBoxTask_KES.TabIndex = 0;
             textBoxTask_KES.TabStop = false;
             textBoxTask_KES.Text = "Вычислить выражение по формуле\r\n";
@@ -60,9 +61,10 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // pictureBoxFormula_KES
             // 
             pictureBoxFormula_KES.InitialImage = null;
-            pictureBoxFormula_KES.Location = new Point(281, 22);
+            pictureBoxFormula_KES.Location = new Point(321, 29);
+            pictureBoxFormula_KES.Margin = new Padding(3, 4, 3, 4);
             pictureBoxFormula_KES.Name = "pictureBoxFormula_KES";
-            pictureBoxFormula_KES.Size = new Size(129, 70);
+            pictureBoxFormula_KES.Size = new Size(147, 93);
             pictureBoxFormula_KES.TabIndex = 1;
             pictureBoxFormula_KES.TabStop = false;
             // 
@@ -70,9 +72,11 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // 
             groupBoxTask_KES.Controls.Add(textBoxTask_KES);
             groupBoxTask_KES.Controls.Add(pictureBoxFormula_KES);
-            groupBoxTask_KES.Location = new Point(23, 24);
+            groupBoxTask_KES.Location = new Point(26, 32);
+            groupBoxTask_KES.Margin = new Padding(3, 4, 3, 4);
             groupBoxTask_KES.Name = "groupBoxTask_KES";
-            groupBoxTask_KES.Size = new Size(431, 216);
+            groupBoxTask_KES.Padding = new Padding(3, 4, 3, 4);
+            groupBoxTask_KES.Size = new Size(493, 288);
             groupBoxTask_KES.TabIndex = 2;
             groupBoxTask_KES.TabStop = false;
             groupBoxTask_KES.Text = "Условие:";
@@ -81,9 +85,11 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // 
             groupBoxEnter_KES.Controls.Add(labelVarX_KES);
             groupBoxEnter_KES.Controls.Add(textBoxVarX_KES);
-            groupBoxEnter_KES.Location = new Point(23, 257);
+            groupBoxEnter_KES.Location = new Point(26, 343);
+            groupBoxEnter_KES.Margin = new Padding(3, 4, 3, 4);
             groupBoxEnter_KES.Name = "groupBoxEnter_KES";
-            groupBoxEnter_KES.Size = new Size(200, 131);
+            groupBoxEnter_KES.Padding = new Padding(3, 4, 3, 4);
+            groupBoxEnter_KES.Size = new Size(229, 175);
             groupBoxEnter_KES.TabIndex = 3;
             groupBoxEnter_KES.TabStop = false;
             groupBoxEnter_KES.Text = "Ввод данные";
@@ -91,17 +97,18 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // labelVarX_KES
             // 
             labelVarX_KES.AutoSize = true;
-            labelVarX_KES.Location = new Point(40, 45);
+            labelVarX_KES.Location = new Point(46, 60);
             labelVarX_KES.Name = "labelVarX_KES";
-            labelVarX_KES.Size = new Size(89, 15);
+            labelVarX_KES.Size = new Size(114, 20);
             labelVarX_KES.TabIndex = 1;
             labelVarX_KES.Text = "Переменная X:";
             // 
             // textBoxVarX_KES
             // 
-            textBoxVarX_KES.Location = new Point(40, 79);
+            textBoxVarX_KES.Location = new Point(46, 105);
+            textBoxVarX_KES.Margin = new Padding(3, 4, 3, 4);
             textBoxVarX_KES.Name = "textBoxVarX_KES";
-            textBoxVarX_KES.Size = new Size(100, 23);
+            textBoxVarX_KES.Size = new Size(114, 27);
             textBoxVarX_KES.TabIndex = 0;
             textBoxVarX_KES.KeyPress += textBoxVarX_KeyPressed;
             // 
@@ -109,9 +116,11 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // 
             groupBoxResult_KES.Controls.Add(labelResult_KES);
             groupBoxResult_KES.Controls.Add(textBoxResult_KES);
-            groupBoxResult_KES.Location = new Point(254, 257);
+            groupBoxResult_KES.Location = new Point(290, 343);
+            groupBoxResult_KES.Margin = new Padding(3, 4, 3, 4);
             groupBoxResult_KES.Name = "groupBoxResult_KES";
-            groupBoxResult_KES.Size = new Size(200, 133);
+            groupBoxResult_KES.Padding = new Padding(3, 4, 3, 4);
+            groupBoxResult_KES.Size = new Size(229, 177);
             groupBoxResult_KES.TabIndex = 4;
             groupBoxResult_KES.TabStop = false;
             groupBoxResult_KES.Text = "Вывод данных";
@@ -119,26 +128,28 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // labelResult_KES
             // 
             labelResult_KES.AutoSize = true;
-            labelResult_KES.Location = new Point(64, 45);
+            labelResult_KES.Location = new Point(73, 60);
             labelResult_KES.Name = "labelResult_KES";
-            labelResult_KES.Size = new Size(63, 15);
+            labelResult_KES.Size = new Size(78, 20);
             labelResult_KES.TabIndex = 1;
             labelResult_KES.Text = "Результат:";
             // 
             // textBoxResult_KES
             // 
-            textBoxResult_KES.Location = new Point(50, 79);
+            textBoxResult_KES.Location = new Point(57, 105);
+            textBoxResult_KES.Margin = new Padding(3, 4, 3, 4);
             textBoxResult_KES.Name = "textBoxResult_KES";
             textBoxResult_KES.ReadOnly = true;
-            textBoxResult_KES.Size = new Size(100, 23);
+            textBoxResult_KES.Size = new Size(114, 27);
             textBoxResult_KES.TabIndex = 0;
             textBoxResult_KES.TextChanged += buttonResult_Click;
             // 
             // buttonResult_KES
             // 
-            buttonResult_KES.Location = new Point(347, 405);
+            buttonResult_KES.Location = new Point(397, 540);
+            buttonResult_KES.Margin = new Padding(3, 4, 3, 4);
             buttonResult_KES.Name = "buttonResult_KES";
-            buttonResult_KES.Size = new Size(107, 37);
+            buttonResult_KES.Size = new Size(122, 49);
             buttonResult_KES.TabIndex = 5;
             buttonResult_KES.Text = "Вычислить";
             buttonResult_KES.UseVisualStyleBackColor = true;
@@ -148,9 +159,10 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // 
             buttonHelp_KES.BackColor = SystemColors.Control;
             buttonHelp_KES.FlatStyle = FlatStyle.Flat;
-            buttonHelp_KES.Location = new Point(304, 405);
+            buttonHelp_KES.Location = new Point(347, 540);
+            buttonHelp_KES.Margin = new Padding(3, 4, 3, 4);
             buttonHelp_KES.Name = "buttonHelp_KES";
-            buttonHelp_KES.Size = new Size(37, 37);
+            buttonHelp_KES.Size = new Size(42, 49);
             buttonHelp_KES.TabIndex = 6;
             buttonHelp_KES.Text = "?";
             buttonHelp_KES.UseVisualStyleBackColor = false;
@@ -158,20 +170,21 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
-            ClientSize = new Size(490, 463);
+            ClientSize = new Size(560, 617);
             Controls.Add(buttonHelp_KES);
             Controls.Add(buttonResult_KES);
             Controls.Add(groupBoxResult_KES);
             Controls.Add(groupBoxEnter_KES);
             Controls.Add(groupBoxTask_KES);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 0 | Вариант 7| Королев Е. С.";
+            Text = "Спринт 6 | Таск 0 | Вариант 7| Молчанкина А.П.";
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_KES).EndInit();
             groupBoxTask_KES.ResumeLayout(false);
             groupBoxTask_KES.PerformLayout();
