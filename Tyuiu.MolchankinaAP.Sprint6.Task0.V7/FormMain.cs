@@ -1,4 +1,5 @@
 ﻿using Tyuiu.MolchankinaAP.Sprint6.Task0.V7.Lib;
+
 namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
 {
     public partial class FormMain : Form
@@ -11,7 +12,14 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
         private void buttonResult_IAA_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
-            textBoxResult_IAA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_IAA.Text)));
+            try
+            {
+                textBoxResult_IAA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_IAA.Text)));
+            }
+            catch 
+            {
+                MessageBox.Show("Введены неверные данные", "Ошибкка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void buttonInfo_IAA_Click(object sender, EventArgs e)
