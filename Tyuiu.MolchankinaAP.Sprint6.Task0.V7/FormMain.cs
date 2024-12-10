@@ -9,37 +9,26 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             InitializeComponent();
         }
 
-        private void buttonResult_IAA_Click(object sender, EventArgs e)
+        private void buttonResult_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
             try
             {
-                textBoxResult_IAA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_IAA.Text)));
+                textBoxResult_KES.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_KES.Text)));
             }
-            catch 
+            catch
             {
-                MessageBox.Show("Введены неверные данные", "Ошибкка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Íåâåðíûå äàííûå", "Îøèáêà", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void buttonInfo_IAA_Click(object sender, EventArgs e)
+        private void textBoxVarX_KeyPressed(object sender, KeyPressEventArgs e)
         {
-            MessageBox.Show("Òàñê 0 âûïîëíèë ñòóäåíò ãðóïïû ÑÌÀÐÒá-24-1 Ìèëþòèí Íèêèòà Äìèòðèèåâè÷", "Ñîîáùåíèå");
-        }
-        //Ð
-        private void textBoxVarX_IAA_TextChanged(object sender, EventArgs e)
-        {
-
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8)) e.Handled = true;
         }
 
-        private void groupBoxTask_IAA_Enter(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Òàñê 0 âûïîëíèë ñòóäåíò ãðóïïû ÀÑÎèÓá-24-1 Êîðîëåâ Å.Ñ.", "Ñïðàâêà");
         }
     }
 }
