@@ -9,7 +9,7 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task1.V15
             InitializeComponent();
         }
         DataService ds = new DataService();
-        private void buttonDone_NVA_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             try
             {
@@ -194,12 +194,6 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task1.V15
             groupBoxhg_MAP.PerformLayout();
             ResumeLayout(false);
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 

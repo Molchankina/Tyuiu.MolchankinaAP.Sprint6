@@ -1,4 +1,4 @@
-﻿using Tyuiu.MolchankinaAP.Sprint6.Task0.V7.Lib;
+﻿
 namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
 {
     partial class FormMain
@@ -80,6 +80,7 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
             groupBoxTask_KES.TabIndex = 2;
             groupBoxTask_KES.TabStop = false;
             groupBoxTask_KES.Text = "Условие:";
+            groupBoxTask_KES.Enter += groupBoxTask_KES_Enter;
             // 
             // groupBoxEnter_KES
             // 

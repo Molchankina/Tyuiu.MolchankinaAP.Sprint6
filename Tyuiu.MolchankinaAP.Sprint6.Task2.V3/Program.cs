@@ -1,4 +1,4 @@
-namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
+namespace Tyuiu.MolchankinaAP.Sprint6.Task2.V3
 {
     internal static class Program
     {

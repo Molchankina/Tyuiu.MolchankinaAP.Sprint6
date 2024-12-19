@@ -30,5 +30,10 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task0.V7
         {
             MessageBox.Show("Òàñê 0 âûïîëíèë ñòóäåíò ãðóïïû ÀÑÎèÓá-24-1 Êîðîëåâ Å.Ñ.", "Ñïðàâêà");
         }
+
+        private void groupBoxTask_KES_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
