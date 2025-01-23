@@ -29,27 +29,32 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3", "Task3", "{A03E8046-14AE-4DB5-A1B7-EBE0B075BA2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task3.V15", "Tyuiu.MolchankinaAP.Sprint6.Task3.V15\Tyuiu.MolchankinaAP.Sprint6.Task3.V15.csproj", "{BA3E8E8F-CD0B-4B6D-B362-4EF628782BB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task3.V15", "Tyuiu.MolchankinaAP.Sprint6.Task3.V15\Tyuiu.MolchankinaAP.Sprint6.Task3.V15.csproj", "{BA3E8E8F-CD0B-4B6D-B362-4EF628782BB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Lib", "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Lib\Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Lib.csproj", "{21320783-AD19-4D78-B25D-49095D9B99CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Lib", "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Lib\Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Lib.csproj", "{21320783-AD19-4D78-B25D-49095D9B99CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Test", "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Test\Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Test.csproj", "{0D62525F-21EF-4D92-92D7-F2F0AF448C47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Test", "Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Test\Tyuiu.MolchankinaAP.Sprint6.Task3.V15.Test.csproj", "{0D62525F-21EF-4D92-92D7-F2F0AF448C47}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task4", "Task4", "{D1D9F32F-AA8F-4AE0-AE1F-DE0E9C5605E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task4.V18", "Tyuiu.MolchankinaAP.Sprint6.Task4.V18\Tyuiu.MolchankinaAP.Sprint6.Task4.V18.csproj", "{140D237E-25B9-4678-B98D-7525D55A768C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task4.V18", "Tyuiu.MolchankinaAP.Sprint6.Task4.V18\Tyuiu.MolchankinaAP.Sprint6.Task4.V18.csproj", "{140D237E-25B9-4678-B98D-7525D55A768C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Lib", "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Lib\Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Lib.csproj", "{085031A0-6F24-42CE-8A51-9C6E06047FD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Lib", "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Lib\Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Lib.csproj", "{085031A0-6F24-42CE-8A51-9C6E06047FD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Test", "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Test\Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Test.csproj", "{CE0C4E23-7878-4577-B7CB-DD30CFC19E41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Test", "Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Test\Tyuiu.MolchankinaAP.Sprint6.Task4.V18.Test.csproj", "{CE0C4E23-7878-4577-B7CB-DD30CFC19E41}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task5", "Task5", "{BC7CEA50-D32F-47F9-B7F5-172EB49441A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task5.V11", "Tyuiu.MolchankinaAP.Sprint6.Task5.V11\Tyuiu.MolchankinaAP.Sprint6.Task5.V11.csproj", "{B11E3FD7-000F-442A-A931-452FB3BF1DD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task5.V11", "Tyuiu.MolchankinaAP.Sprint6.Task5.V11\Tyuiu.MolchankinaAP.Sprint6.Task5.V11.csproj", "{B11E3FD7-000F-442A-A931-452FB3BF1DD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Lib", "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Lib\Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Lib.csproj", "{607FE437-9999-4780-B3F7-028BAF47691B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Lib", "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Lib\Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Lib.csproj", "{607FE437-9999-4780-B3F7-028BAF47691B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Test", "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Test\Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Test.csproj", "{8EE6209A-EFC9-45B3-82B3-3E3844C94618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Test", "Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Test\Tyuiu.MolchankinaAP.Sprint6.Task5.V11.Test.csproj", "{8EE6209A-EFC9-45B3-82B3-3E3844C94618}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D29E289-5694-4379-8384-F6B096B989BA}"
+	ProjectSection(SolutionItems) = preProject
+		Tyuiu.MolchankinaAP.Sprint6.Task6.V3.Lib\DataService.cs = Tyuiu.MolchankinaAP.Sprint6.Task6.V3.Lib\DataService.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
