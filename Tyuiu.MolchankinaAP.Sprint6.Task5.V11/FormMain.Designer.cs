@@ -150,7 +150,7 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task5.V11
             Controls.Add(buttonDone_MAP);
             Controls.Add(groupBoxTask_MAP);
             Name = "FormMain_MAP";
-            Text = "Спринт 6 | Таск 5 | Вариант 11 | Лавринович Е.Д.";
+            Text = "Спринт 6 | Таск 5 | Вариант 11 | Молчанкина А.П.";
             groupBoxTask_MAP.ResumeLayout(false);
             groupBoxTask_MAP.PerformLayout();
             groupBoxVar_MAP.ResumeLayout(false);
