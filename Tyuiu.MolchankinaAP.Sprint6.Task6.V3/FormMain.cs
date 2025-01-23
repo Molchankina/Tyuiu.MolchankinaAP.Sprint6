@@ -1,9 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using Tyuiu.MolchankinaAP.Sprint6.Task6.V3.Lib;
+
 namespace Tyuiu.MolchankinaAP.Sprint6.Task6.V3
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
