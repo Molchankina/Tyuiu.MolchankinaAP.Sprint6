@@ -124,7 +124,7 @@
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 3 | Вариант 15 | Гридин А. Е.";
+            Text = "Спринт 6 | Таск 3 | Вариант 15 | Молчанкина А.П.";
             Load += FormMain_Load;
             groupBoxTask_MAP.ResumeLayout(false);
             groupBoxTask_MAP.PerformLayout();
