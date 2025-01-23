@@ -1,4 +1,4 @@
-namespace Tyuiu.MolchankinaAP.Sprint6.Task2.V3
+﻿namespace Tyuiu.MolchankinaAP.Sprint6.Task2.V3
 {
     public partial class FormMain : Form
     {
@@ -6,35 +6,24 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task2.V3
         {
             InitializeComponent();
         }
+        DataService ds = new DataService();
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBoxKVK_MAP_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
-
-        private void button2_MAP_Click(object sender, EventArgs e)
-        {
-
+            int startValue = Convert.ToInt32(textBox1.Text);
+            int stopValue = Convert.ToInt32(textBox2.Text);
+            int len = ds.GetMassFunction(startValue, stopValue).Length;
+            double[] result = new double[len];
+            result = ds.GetMassFunction(startValue, stopValue);
+            this.chart1.Titles.Add("Ãðàôèê ôóíêöèè F(X)= sin(x) / x + 1,2 + cos(x) * 7x - 2");
+            this.chart1.ChartAreas[0].AxisX.Title = "Îñü X";
+            this.chart1.ChartAreas[0].AxisY.Title = "Îñü Y";
+            for (int i = 0; i <= len - 1; i++)
+            {
+                this.dataGridView1.Rows.Add(Convert.ToString(startValue), Convert.ToString(result[i]));
+                this.chart1.Series[0].Points.AddXY(startValue, result[i]);
+                startValue++;
+            }
         }
     }
 }
