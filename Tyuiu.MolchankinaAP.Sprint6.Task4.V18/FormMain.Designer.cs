@@ -166,7 +166,7 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task4.V18
             Controls.Add(groupBoxInput);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FormMain";
-            Text = "Спринт 6 | Таск 4 | Вариант 18 | Кулько.Д.А";
+            Text = "Спринт 6 | Таск 4 | Вариант 18 | Молчанкина А.П.";
             Load += FormMain_Load;
             groupBoxInput.ResumeLayout(false);
             groupBoxInput.PerformLayout();
