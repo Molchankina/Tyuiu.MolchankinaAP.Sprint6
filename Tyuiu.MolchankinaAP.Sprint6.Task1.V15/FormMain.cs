@@ -83,6 +83,7 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task1.V15
             textBox9_MAP.Size = new Size(576, 343);
             textBox9_MAP.TabIndex = 0;
             textBox9_MAP.Text = "Протабулировать функцию f(x) на заданном диапозоне\r\nРезультат вывести в виде таблицы";
+            textBox9_MAP.TextChanged += textBox9_MAP_TextChanged;
             // 
             // groupBoxgh_MAP
             // 
@@ -194,6 +195,7 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task1.V15
             groupBoxhg_MAP.PerformLayout();
             ResumeLayout(false);
         }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -215,6 +217,11 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task1.V15
         }
 
         private void groupBoxgh_MAP_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_MAP_TextChanged(object sender, EventArgs e)
         {
 
         }
