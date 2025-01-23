@@ -1,3 +1,4 @@
+﻿using System;
 using System.IO;
 using Tyuiu.MolchankinaAP.Sprint6.Task5.V11;
 namespace Tyuiu.MolchankinaAP.Sprint6.Task5.V11
@@ -11,45 +12,40 @@ namespace Tyuiu.MolchankinaAP.Sprint6.Task5.V11
 
         DataService ds = new DataService();
 
-        string path = @"C:\Users\alina\source\repos\Tyuiu.GalimovaAS.Sprint6\DataSprint6\InPutDataFileTask5V11.txt";
+        string path = @"C:\Users\y_lav\source\repos\Tyuiu.LavrinovichED.Sprint6\DataSprint6\InPutDataFileTask5V11.txt";
 
-        private void textBoxData_TextChanged(object sender, EventArgs e)
+        private void buttonDone_LED_Click(object sender, EventArgs e)
         {
+            dataGridViewResult_LED.ColumnCount = 2;
+            dataGridViewResult_LED.Columns[0].Width = 20;
+            dataGridViewResult_LED.Columns[1].Width = 50;
 
-        }
+            this.chartResult_LED.ChartAreas[0].AxisX.Title = "Îñü Õ";
+            this.chartResult_LED.ChartAreas[0].AxisY.Title = "Îñü Y";
 
-        private void textBoxTask_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonDone_Click(object sender, EventArgs e)
-        {
-            dataGridViewResult.ColumnCount = 2;
-            dataGridViewResult.Columns[0].Width = 20;
-            dataGridViewResult.Columns[1].Width = 50;
-
-            this.chart1.ChartAreas[0].AxisX.Title = "��� x";
-            this.chart1.ChartAreas[0].AxisY.Title = "��� y";
-
-            chart1.Series[0].Points.Clear();
+            chartResult_LED.Series[0].Points.Clear();
             double[] numMass = new double[ds.len];
 
             numMass = ds.LoadFromDataFile(path);
 
             for (int i = 0; i < numMass.Length; i++)
             {
-                dataGridViewResult.Rows.Add(Convert.ToString(i), Convert.ToString(numMass[i]));
-                chart1.Series[0].Points.AddXY(i, numMass[i]);
+                dataGridViewResult_LED.Rows.Add(Convert.ToString(i), Convert.ToString(numMass[i]));
+                chartResult_LED.Series[0].Points.AddXY(i, numMass[i]);
             }
         }
 
-        private void buttonSave_Click(object sender, EventArgs e)
+        private void buttonFile_LED_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process txt = new System.Diagnostics.Process();
             txt.StartInfo.FileName = "notepad.exe";
             txt.StartInfo.Arguments = path;
             txt.Start();
+        }
+
+        private void buttonHelp_LED_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Òàñê 5 âàðèàíò 11 âûïîëíèëà ñòóäåíòêà ãðóïïû ÀÑÎèÓÁ-24-1 Ëàâðèíîâè÷ Åëèçàâåòà Äìèòðèåâíà");
         }
     }
 }

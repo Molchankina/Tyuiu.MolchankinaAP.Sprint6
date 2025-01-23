@@ -1,4 +1,8 @@
-﻿namespace Tyuiu.MolchankinaAP.Sprint6.Task5.V11
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace Tyuiu.MolchankinaAP.Sprint6.Task5.V11
 {
     partial class FormMain
     {
@@ -31,136 +35,139 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            label1 = new Label();
-            buttonSave = new Button();
-            labelTerm = new Label();
-            buttonDone = new Button();
-            buttonInfo = new Button();
-            textBoxTask = new TextBox();
-            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            dataGridViewResult = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewResult).BeginInit();
+            groupBoxTask_MAP = new GroupBox();
+            textBoxTask_MAP = new TextBox();
+            buttonDone_MAP = new Button();
+            buttonFile_MAP = new Button();
+            buttonHelp_MAP = new Button();
+            groupBoxVar_MAP = new GroupBox();
+            dataGridViewResult_MAP = new DataGridView();
+            chartResult_MAP = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            groupBoxTask_MAP.SuspendLayout();
+            groupBoxVar_MAP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_MAP).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chartResult_MAP).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // groupBoxTask_MAP
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(-138, 96);
-            label1.Name = "label1";
-            label1.Size = new Size(54, 20);
-            label1.TabIndex = 51;
-            label1.Text = "Вывод";
+            groupBoxTask_MAP.Controls.Add(textBoxTask_MAP);
+            groupBoxTask_MAP.Location = new Point(12, 12);
+            groupBoxTask_MAP.Name = "groupBoxTask_MAP";
+            groupBoxTask_MAP.Size = new Size(556, 112);
+            groupBoxTask_MAP.TabIndex = 0;
+            groupBoxTask_MAP.TabStop = false;
+            groupBoxTask_MAP.Text = "Условие";
             // 
-            // buttonSave
+            // textBoxTask_MAP
             // 
-            buttonSave.FlatStyle = FlatStyle.Flat;
-            buttonSave.Location = new Point(702, 31);
-            buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(112, 57);
-            buttonSave.TabIndex = 49;
-            buttonSave.Text = "Сохранить";
-            buttonSave.UseVisualStyleBackColor = true;
-            buttonSave.Click += buttonSave_Click;
+            textBoxTask_MAP.Location = new Point(12, 26);
+            textBoxTask_MAP.Multiline = true;
+            textBoxTask_MAP.Name = "textBoxTask_MAP";
+            textBoxTask_MAP.ReadOnly = true;
+            textBoxTask_MAP.Size = new Size(541, 72);
+            textBoxTask_MAP.TabIndex = 1;
+            textBoxTask_MAP.Text = "Прочитать данные из файла InPutFileTask5V11.txt. Вывести все\r\nчисла кратные 5. Построить диаграмму по этим значениям. У \r\nвещественных значений округлить до трех знаков после запятой";
             // 
-            // labelTerm
+            // buttonDone_MAP
             // 
-            labelTerm.AutoSize = true;
-            labelTerm.Location = new Point(-138, -10);
-            labelTerm.Name = "labelTerm";
-            labelTerm.Size = new Size(70, 20);
-            labelTerm.TabIndex = 44;
-            labelTerm.Text = "Условие:";
+            buttonDone_MAP.BackColor = Color.PaleGreen;
+            buttonDone_MAP.Location = new Point(574, 38);
+            buttonDone_MAP.Name = "buttonDone_MAP";
+            buttonDone_MAP.Size = new Size(108, 72);
+            buttonDone_MAP.TabIndex = 1;
+            buttonDone_MAP.Text = "Выполнить";
+            buttonDone_MAP.UseVisualStyleBackColor = false;
+            buttonDone_MAP.Click += buttonDone_MAP_Click;
             // 
-            // buttonDone
+            // buttonFile_MAP
             // 
-            buttonDone.BackColor = SystemColors.AppWorkspace;
-            buttonDone.Location = new Point(591, 31);
-            buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(105, 57);
-            buttonDone.TabIndex = 41;
-            buttonDone.Text = "Выполнить";
-            buttonDone.UseVisualStyleBackColor = false;
-            buttonDone.Click += buttonDone_Click;
+            buttonFile_MAP.BackColor = Color.CornflowerBlue;
+            buttonFile_MAP.Location = new Point(688, 38);
+            buttonFile_MAP.Name = "buttonFile_MAP";
+            buttonFile_MAP.Size = new Size(108, 72);
+            buttonFile_MAP.TabIndex = 2;
+            buttonFile_MAP.Text = "Открыть файл";
+            buttonFile_MAP.UseVisualStyleBackColor = false;
+            buttonFile_MAP.Click += buttonFile_MAP_Click;
             // 
-            // buttonInfo
+            // buttonHelp_MAP
             // 
-            buttonInfo.BackColor = SystemColors.AppWorkspace;
-            buttonInfo.Location = new Point(503, 31);
-            buttonInfo.Name = "buttonInfo";
-            buttonInfo.Size = new Size(82, 57);
-            buttonInfo.TabIndex = 40;
-            buttonInfo.Text = "Справка";
-            buttonInfo.UseVisualStyleBackColor = false;
+            buttonHelp_MAP.BackColor = Color.PaleTurquoise;
+            buttonHelp_MAP.Location = new Point(802, 38);
+            buttonHelp_MAP.Name = "buttonHelp_MAP";
+            buttonHelp_MAP.Size = new Size(108, 72);
+            buttonHelp_MAP.TabIndex = 3;
+            buttonHelp_MAP.Text = "Справка";
+            buttonHelp_MAP.UseVisualStyleBackColor = false;
+            buttonHelp_MAP.Click += buttonHelp_MAP_Click;
             // 
-            // textBoxTask
+            // groupBoxVar_MAP
             // 
-            textBoxTask.BackColor = SystemColors.Menu;
-            textBoxTask.Location = new Point(-5, 12);
-            textBoxTask.Multiline = true;
-            textBoxTask.Name = "textBoxTask";
-            textBoxTask.ReadOnly = true;
-            textBoxTask.Size = new Size(480, 83);
-            textBoxTask.TabIndex = 39;
-            textBoxTask.Text = "Протабулировать функцию sin(x) на заданном диапозоне. Результат вывести в виде таблицы. ";
-            textBoxTask.TextChanged += textBoxTask_TextChanged;
+            groupBoxVar_MAP.Controls.Add(dataGridViewResult_MAP);
+            groupBoxVar_MAP.Location = new Point(12, 130);
+            groupBoxVar_MAP.Name = "groupBoxVar_MAP";
+            groupBoxVar_MAP.Size = new Size(250, 404);
+            groupBoxVar_MAP.TabIndex = 4;
+            groupBoxVar_MAP.TabStop = false;
+            groupBoxVar_MAP.Text = "Вывод данных";
             // 
-            // chart1
+            // dataGridViewResult_MAP
+            // 
+            dataGridViewResult_MAP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewResult_MAP.Location = new Point(3, 23);
+            dataGridViewResult_MAP.Name = "dataGridViewResult_MAP";
+            dataGridViewResult_MAP.RowHeadersWidth = 51;
+            dataGridViewResult_MAP.ScrollBars = ScrollBars.Vertical;
+            dataGridViewResult_MAP.Size = new Size(241, 375);
+            dataGridViewResult_MAP.TabIndex = 0;
+            // 
+            // chartResult_MAP
             // 
             chartArea1.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea1);
+            chartResult_MAP.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            chart1.Legends.Add(legend1);
-            chart1.Location = new Point(362, 101);
-            chart1.Name = "chart1";
+            chartResult_MAP.Legends.Add(legend1);
+            chartResult_MAP.Location = new Point(268, 130);
+            chartResult_MAP.Name = "chartResult_MAP";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            chart1.Series.Add(series1);
-            chart1.Size = new Size(616, 375);
-            chart1.TabIndex = 52;
-            chart1.Text = "chart1";
+            chartResult_MAP.Series.Add(series1);
+            chartResult_MAP.Size = new Size(642, 398);
+            chartResult_MAP.TabIndex = 1;
+            chartResult_MAP.Text = "chart1";
             // 
-            // dataGridViewResult
+            // FormMain_MAP
             // 
-            dataGridViewResult.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewResult.Location = new Point(12, 118);
-            dataGridViewResult.Name = "dataGridViewResult";
-            dataGridViewResult.RowHeadersWidth = 51;
-            dataGridViewResult.Size = new Size(300, 358);
-            dataGridViewResult.TabIndex = 53;
-            // 
-            // FormMain
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaMAPimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1085, 499);
-            Controls.Add(dataGridViewResult);
-            Controls.Add(chart1);
-            Controls.Add(label1);
-            Controls.Add(buttonSave);
-            Controls.Add(labelTerm);
-            Controls.Add(buttonDone);
-            Controls.Add(buttonInfo);
-            Controls.Add(textBoxTask);
-            Name = "FormMain";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewResult).EndInit();
+            ClientSize = new Size(925, 546);
+            Controls.Add(chartResult_MAP);
+            Controls.Add(groupBoxVar_MAP);
+            Controls.Add(buttonHelp_MAP);
+            Controls.Add(buttonFile_MAP);
+            Controls.Add(buttonDone_MAP);
+            Controls.Add(groupBoxTask_MAP);
+            Name = "FormMain_MAP";
+            Text = "Спринт 6 | Таск 5 | Вариант 11 | Лавринович Е.Д.";
+            groupBoxTask_MAP.ResumeLayout(false);
+            groupBoxTask_MAP.PerformLayout();
+            groupBoxVar_MAP.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_MAP).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chartResult_MAP).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Button buttonSave;
-        private Label labelTerm;
-        private Button buttonDone;
-        private Button buttonInfo;
-        private TextBox textBoxTask;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private DataGridView dataGridViewResult;
+        private GroupBox groupBoxTask_MAP;
+        private TextBox textBoxTask_MAP;
+        private Button buttonDone_MAP;
+        private Button buttonFile_MAP;
+        private Button buttonHelp_MAP;
+        private GroupBox groupBoxVar_MAP;
+        private DataGridView dataGridViewResult_MAP;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartResult_MAP;
     }
 }
